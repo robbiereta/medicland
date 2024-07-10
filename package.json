@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "npm-watch",
+    "both": "npm run build && npm run start"
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^40.2.0",
@@ -16,6 +18,7 @@
     "@fullcalendar/react": "^6.1.10",
     "bootstrap": "^5.3.2",
     "next": "14.0.4",
+    "npm-watch": "^0.13.0",
     "react": "^18",
     "react-apexcharts": "^1.4.1",
     "react-bootstrap": "^2.9.2",
@@ -27,6 +30,14 @@
     "sass": "^1.69.7",
     "simplebar-react": "^3.2.4",
     "tiny-slider-react": "^0.5.7"
+  },
+    "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "js,jsx"
+    }
   },
   "devDependencies": {
     "eslint": "^8",
