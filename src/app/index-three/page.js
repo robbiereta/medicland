@@ -129,66 +129,12 @@ export default function IndexThree(){
                 </div>
             </div>
             
-            <div className="container-fluid mt-100 mt-60">
-                <div className="py-5 rounded" style={{backgroundImage:`url('/images/bg/05.jpg')`}}>
-                   <CtaThree/>
-                </div>
-            </div>
+       
         </section>
 
-        <section className="pt-md-0 cta-section">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 col-md-6">
-                        <div className="row mt-4">
-                            {partners.map((item, index) =>{
-                                return(
-                                    <div className="col-lg-3 col-md-4 col-6 text-center py-4" key={index}>
-                                        <Image src={item} width={115} height={25} className="avatar avatar-client" alt=""/>
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section className="section">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-12">
-                        <div className="section-title text-center mb-4 pb-2">
-                            <h4 className="title mb-4">Doctors</h4>
-                            <p className="text-muted mx-auto para-desc mb-0">Great doctor if you need your family member to get effective immediate assistance, emergency treatment or a simple consultation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row align-items-center">
-                    {doctorData.slice(0,4).map((item, index) =>{
-                        return(
-                            <div className="col-xl-3 col-lg-3 col-md-6 mt-4 pt-2" key={index}>
-                                <div className="card team border-0 rounded shadow overflow-hidden">
-                                    <div className="team-img position-relative">
-                                        <Image src={item.image} width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/>
-                                        <ul className="list-unstyled team-social mb-0">
-                                            <li><Link href="#" className="btn btn-icon btn-pills btn-soft-primary"><FiFacebook className="icons"/></Link></li>
-                                            <li className="mt-2 ms-0"><Link href="#" className="btn btn-icon btn-pills btn-soft-primary"><FiLinkedin className="icons"/></Link></li>
-                                            <li className="mt-2 ms-0"><Link href="#" className="btn btn-icon btn-pills btn-soft-primary"><FiGithub className="icons"/></Link></li>
-                                            <li className="mt-2 ms-0"><Link href="#" className="btn btn-icon btn-pills btn-soft-primary"><FiTwitter className="icons"/></Link></li>
-                                        </ul>
-                                    </div>
-                                    <div className="card-body content text-center">
-                                        <Link href="/doctor-team-one" className="title text-dark h5 d-block mb-0">{item.name}</Link>
-                                        <small className="text-muted speciality">{item.speciality}</small>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </div>
+            
 
             <div className="container mt-100 mt-60">
                 <div className="row align-items-lg-end">
